@@ -1,4 +1,13 @@
 #!/usr/bin/env bash
+
+# https://github.com/iagodahlem/dotfiles/blob/master/install-dotfiles.sh for ref
+# IDEAS:
+# make all npm, node packages in a list type thing 'npm install -g $(cat nmp/globals|grep -v "#")'
+# wins64 fonts, code folder and s like that
+# my main code folder, could start with subdirectories
+#
+################################################################################
+
 INFOCOLOR='\033[0;32m'
 NOCOLOR='\033[0m' #Nocolor
 echo_alert (string) {
