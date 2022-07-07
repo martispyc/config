@@ -10,7 +10,7 @@
 
 INFOCOLOR='\033[0;32m'
 NOCOLOR='\033[0m' #Nocolor
-echo_alert (string) {
+echo_alert () {
     echo "${INFOCOLOR}$1${NOCOLOR}"
 }
 
