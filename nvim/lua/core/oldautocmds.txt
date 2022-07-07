@@ -1,0 +1,64 @@
+vim.cmd(
+  [[
+
+function! s:run_exec(com) abort
+    execute "wa"
+    execute "10split"
+    execute "term ".a:com
+    execute "file RUN_PROCESS_UNIQUE_NAME_HERE"
+    execute "bufdo e"
+    execute "startinsert"
+endfunction
+
+function! s:toggle_terminal(com) abort
+  let l:w = bufwinnr("RUN_PROCESS_UNIQUE_NAME_HERE") " The buffer will have the name 'term://{path}{command}' then we can just search for a buffer containing the commad
+  if l:w > 0 " if found
+    execute "bd RUN_PROCESS_UNIQUE_NAME_HERE"
+    execute s:run_exec(a:com)
+  else
+    execute s:run_exec(a:com)
+  endif
+endfunction
+
+    autocmd TermOpen * setlocal nonu
+    autocmd FocusGained * checktime
+        " trigger `autoread` when files changes on disk
+      set autoread
+      autocmd FocusGained,BufEnter,CursorHold,CursorHoldI * if mode() != 'c' | checktime | endif
+    " notification after file change
+      autocmd FileChangedShellPost *
+        \ echohl WarningMsg | echo "File changed on disk. Buffer reloaded." | echohl None
+
+    augroup compileandrun
+        autocmd!
+
+        " {F5 and F6 are meant more for cpp but whatever}    
+        " F5 -- no input with minimalistic flags 
+        " F6 -- input with minalistic flags
+         
+        " F7 -- no input 
+        " F8 -- input
+
+    " F5
+        autocmd filetype cpp noremap <F5> <ESC> :w <CR> :!g++ -std=c++17 -DONPC -O2 -o %< % && ./%< <CR>
+        autocmd filetype cpp inoremap <F5> <ESC> :w <CR> :!g++ -std=c++17 -DONPC -O2 -o %< % && ./%< <CR>
+
+    " F6
+        autocmd filetype cpp noremap <F6> <ESC> :w <CR> :!g++ -std=c++17 -DONPC -O2 -o %< % && ./%< < inp<CR>
+        autocmd filetype cpp inoremap <F6> <ESC> :w <CR> :!g++ -std=c++17 -DONPC -O2 -o %< % && ./%< < inp<CR>
+
+    " F7
+        autocmd filetype python noremap <buffer> <F7> <ESC> :w <CR> :call <SID>toggle_terminal("python3 %")<CR>
+        autocmd filetype python inoremap <buffer> <F7> <ESC> :w <CR> :call <SID>toggle_terminal("python3 %")<CR> 
+        autocmd filetype cpp noremap <F7> <ESC> :w <CR> :15sp <CR> :term g++ -fsanitize=address -std=c++17 -Wall -Wextra -Wshadow -DONPC -O2 -o %< % && ./%< <CR> :startinsert <CR>
+        autocmd filetype cpp inoremap <F7> <ESC> :w <CR> :15sp <CR> :term g++ -fsanitize=address -std=c++17 -Wall -Wextra -Wshadow -DONPC -O2 -o %< % && ./%< <CR> :startinsert <CR>
+    " F8
+        autocmd filetype cpp noremap <F8> :call <SID>toggle_terminal("g++ -fsanitize=address -std=c++17 -Wall -Wextra -Wshadow -DONPC -O2 -o %< % && ./%< <inp") <CR>
+        autocmd filetype cpp inoremap <F8> :call <SID>toggle_terminal("g++ -fsanitize=address -std=c++17 -Wall -Wextra -Wshadow -DONPC -O2 -o %< % && ./%< <inp") <CR>
+
+        " C++ WITH INPUT AS inp FILE (! WITH CLANG++ NOT G++ !)
+        "autocmd filetype cpp noremap <F8> <ESC> :w <CR> :!clang++ -fsanitize=address -std=c++17 -Wall -Wextra -Wshadow -DONPC -O2 -o %< % && ./%< <CR>
+        "autocmd filetype cpp inoremap <F8> <ESC> :w <CR> :!clang++ -fsanitize=address -std=c++17 -Wall -Wextra -Wshadow -DONPC -O2 -o %< % && ./%< <CR>
+    augroup END
+]]
+)

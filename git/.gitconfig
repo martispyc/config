@@ -1,0 +1,123 @@
+[user]
+  name = martispyc
+  email = burmistrs3@gmail.com
+  editor = code
+[github]
+  user = martispyc
+[init]
+	defaultBranch = main
+[core]
+  editor = nvim
+  excludesfile = ~/.gitignore_global
+  pager = diff-so-fancy | less --tabs=4
+[commit]
+  template = ~/.gitmessage
+[alias]
+  ; # add
+  ; ad = add
+  ; aa = add --all
+  ; ap = add -p
+  ;
+  ; # branch
+  ; br = branch
+  ; bra = branch -a
+  ; brd = branch -d
+  ; brD = branch -D
+  ; brl = branch -l
+  ; brv = branch -v
+  ;
+  ; # checkout
+  ; co = checkout
+  ; cob = checkout -b
+  ; com = checkout master
+  ;
+  ; # cherry-pick
+  ; cp = cherry-pick -x
+  ;
+  ; # clone
+  ; cl = clone
+  ;
+  ; # commit
+  ; ci = commit
+  ; cim = commit -m
+  ; cia = commit --amend
+  ; ciam = commit -am
+  ; amend = commit --amend --no-edit
+  ;
+  ; # diff
+  ; df = diff
+  ; dfs = diff --staged
+  ; dfc = diff --cached
+  ; last = diff HEAD^ # diff last commited change
+  ;
+  ; # fetch
+  ; ft = fetch
+  ; ftp = fetch --prune
+  ;
+  ; # helpers
+  ; bam = !git branch --merged | grep -v '\\*\\|master\\|develop\\|main' | xargs -n 1 git branch -d
+  ;
+  ; # lists
+  ; aliases = !git config --get-regexp 'alias.*' | colrm 1 6 | sed 's/[ ]/ = /' | sort
+  ; branchs = branch -v
+  ; configs = config --list
+  ; remotes = remote -v
+  ; tags = tag -l
+  ;
+  ; # logs
+  ; l = log --oneline --date=short
+  ; lg = log --oneline --pretty=format:'%h %ad | [%an] %s%d' --graph --date=short
+  ;
+  ; # merge
+  ; mg = merge
+  ; mgm = merge master
+  ; mgd = merge develop
+  ;
+  ; # pull
+  ; pl = pull
+  ; plp = pull --prune
+  ;
+  ; # push
+  ; ps = push
+  ; psu = push -u
+  ; psf = push -f
+  ; psuo = push -u origin
+  ; psuom = push -u origin master
+  ; undopush = push -f origin HEAD^:master
+  ;
+  ; # reset
+  ; rt = reset
+  ; rts = reset --soft HEAD~1
+  ; rth = reset --hard HEAD~1
+  ;
+  ; # stash
+  ; sh = stash
+  ; sha = stash apply
+  ; shd = stash drop
+  ; shl = stash list
+  ; shp = stash pop
+  ; shs = stash show
+  ;
+  ; # status
+  ; st = status
+  ; ss = status -s
+[color]
+  ui = auto
+  branch = auto
+  diff = auto
+  status = auto
+[color "diff"]
+  frag = magenta bold
+  meta = yellow bold
+  new = green
+  old = red
+[color "status"]
+  added = cyan bold
+  branch = cyan bold
+  changed = magenta bold
+  deleted = red bold
+  untracked = yellow bold
+[push]
+  default = simple
+[credential]
+  helper = /mnt/c/Program Files/Git/mingw64/bin/git-credential-manager-core.exe

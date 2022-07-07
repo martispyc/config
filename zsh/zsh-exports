@@ -1,0 +1,50 @@
+#!/bin/sh
+# HISTFILE="$XDG_DATA_HOME"/zsh/history
+HISTSIZE=1000000
+SAVEHIST=1000000
+export PATH="$HOME/.local/bin":$PATH
+export MANPAGER='nvim +Man!'
+export MANWIDTH=999
+export PATH=$HOME/.cargo/bin:$PATH
+export PATH=$HOME/.local/share/go/bin:$PATH
+export GOPATH=$HOME/.local/share/go
+export PATH=$HOME/.fnm:$PATH
+export PATH="$PATH:./node_modules/.bin"
+
+# PERSONAL/ TO DO WITH CODE
+#export PATH=$HOME/code/other/scripts:$PATH 
+# GO 
+export PATH=$PATH:/usr/local/go/bin 
+#export GOROOT=/usr/local/go
+#export GOPATH=$HOME/code/pgs/go
+#export GOBIN=$GOPATH/bin
+#export PATH=$PATH:$GOROOT/bin
+#export PATH=$PATH:$GOPATH/bin:$GO
+## NIM
+export PATH=/home/matiss/.nimble/bin:$PATH
+## NVM
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+## #
+# ulimit -s unlimited
+
+
+# PERSONAL
+# eval "$(dircolors ~/.dircolors)"
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$("$HOME/.miniconda/bin/conda" 'shell.zsh' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "$HOME/.miniconda/etc/profile.d/conda.sh" ]; then
+        . "$HOME/.miniconda/etc/profile.d/conda.sh"
+    else
+        export PATH="$HOME/.miniconda/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<
+

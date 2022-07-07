@@ -1,0 +1,5 @@
+return {
+    checkOnSave = {
+        command = "clippy";
+    }
+}
