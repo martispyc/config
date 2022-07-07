@@ -25,8 +25,11 @@ apt-get update
 #######################################################################################################################
 echo_alert "Installing everythig to do with package managers......."
 apt install nodejs npm black python3-pip zsh git cargo ripgrep fd-find pass
-cargo install stylua
 pip install flake8 pynvim
+######################################################################################################################
+echo_alert "Installing rust and cargo packages......."
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+cargo install stylua
 #######################################################################################################################
 echo_alert "Installing zshrc......."
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
