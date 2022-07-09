@@ -78,9 +78,9 @@ function gitall() {
 function gitclone() {
     if [ "$2" != "" ]
     then
-        git clone "https://github.com/$1/$2" # default commit message is `update`
+        git clone "https://github.com/$1/$2.git" # default commit message is `update`
     else
-        git clone "https://github.com/martispyc/$1"
+        git clone "https://github.com/martispyc/$1.git"
     fi # closing statement of if-else block
 }
 
