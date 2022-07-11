@@ -12,4 +12,4 @@ just run `./install.sh` and relax
 * Windows Terminal
 * zsh
 
-# You are free to fork this and use it
+# You are free to fork and use it
