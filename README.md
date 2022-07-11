@@ -1,11 +1,11 @@
 just run `./install.sh` and relax
 
-Custom configs:
+###Custom configs:
 * git
 * nvim
 * zsh
 
-Currently using:
+###Currently using:
 * WSL, ubuntu 20.04
 * Neovim
 * VSCode
