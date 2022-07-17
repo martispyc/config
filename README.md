@@ -4,6 +4,7 @@ just run `./install.sh` and relax
 * git
 * nvim
 * zsh
+( The rest are defaults or copied )
 
 ### Currently using:
 * WSL, ubuntu 20.04
