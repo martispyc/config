@@ -30,6 +30,10 @@ pip install flake8 pynvim
 echo_alert "Installing rust and cargo packages......."
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 cargo install stylua
+
+mkdir -p ~/.local/bin
+curl -L https://github.com/rust-lang/rust-analyzer/releases/latest/download/rust-analyzer-x86_64-unknown-linux-gnu.gz | gunzip -c - > ~/.local/bin/rust-analyzer
+chmod +x ~/.local/bin/rust-analyzer
 #######################################################################################################################
 echo_alert "Installing zshrc......."
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
