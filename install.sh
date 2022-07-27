@@ -29,7 +29,7 @@ pip install flake8 pynvim
 ######################################################################################################################
 echo_alert "Installing rust and cargo packages......."
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
-cargo install stylua
+cargo install stylua exa
 
 mkdir -p ~/.local/bin
 curl -L https://github.com/rust-lang/rust-analyzer/releases/latest/download/rust-analyzer-x86_64-unknown-linux-gnu.gz | gunzip -c - > ~/.local/bin/rust-analyzer
