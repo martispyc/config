@@ -29,7 +29,7 @@ pip install flake8 pynvim
 ######################################################################################################################
 echo_alert "Installing rust and cargo packages......."
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
-cargo install stylua exa
+cargo install stylua
 
 mkdir -p ~/.local/bin
 curl -L https://github.com/rust-lang/rust-analyzer/releases/latest/download/rust-analyzer-x86_64-unknown-linux-gnu.gz | gunzip -c - > ~/.local/bin/rust-analyzer
@@ -54,4 +54,10 @@ ln -s "$CONFIG/git/.gitconfig" ~/.gitconfig
 ln -s "$CONFIG/git/.gitignore_global" ~/.gitignore_global
 ln -s "$CONFIG/git/.gitmessage" ~/.gitmessage
 #######################################################################################################################
+echo_alert "Installing miscellaneous, make these eaiser to install"
+#TODO: make easier to install
+#exa
+wget -c https://old-releases.ubuntu.com/ubuntu/pool/universe/r/rust-exa/exa_0.10.1-1_amd64.deb
+sudo apt-get install ./exa_0.10.1-1_amd64.deb
+
 echo_alert "Install:\nhttps://git-scm.com/download/win\n"
