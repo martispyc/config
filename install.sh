@@ -61,4 +61,4 @@ echo_alert "Installing miscellaneous, make these eaiser to install"
 wget -c https://old-releases.ubuntu.com/ubuntu/pool/universe/r/rust-exa/exa_0.10.1-1_amd64.deb
 sudo apt-get install ./exa_0.10.1-1_amd64.deb
 
-echo_alert "Install:\nhttps://git-scm.com/download/win\nhttps://stackoverflow.com/questions/62495999/installing-mongodb-in-wsl\n"
+echo_alert "Install:\nhttps://git-scm.com/download/win\nhttps://docs.microsoft.com/en-us/windows/wsl/tutorials/wsl-database#install-mongodb\n"
