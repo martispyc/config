@@ -58,6 +58,6 @@ EXA_VERSION=$(curl -s "https://api.github.com/repos/ogham/exa/releases/latest" |
 curl -Lo exa.zip "https://github.com/ogham/exa/releases/latest/download/exa-linux-x86_64-v${EXA_VERSION}.zip"
 sudo unzip -q exa.zip bin/exa -d /usr/local
 #######################################################################################################################
-echo_alert "Installing miscellaneous, make these eaiser to install"
+echo_alert "Installing miscellaneous, make these eaiser to installlllll"
 
 echo_alert "Install:\nhttps://git-scm.com/download/win\nhttps://docs.microsoft.com/en-us/windows/wsl/tutorials/wsl-database#install-mongodb\n"
