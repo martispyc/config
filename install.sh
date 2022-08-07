@@ -24,7 +24,7 @@ apt upgrade
 apt-get update
 #######################################################################################################################
 echo_alert "Installing everythig to do with package managers......."
-apt install nodejs npm black python3-pip zsh git cargo ripgrep fd-find pass unzip
+apt install black python3-pip zsh git cargo ripgrep fd-find pass unzip
 pip install flake8 pynvim
 ######################################################################################################################
 echo_alert "Installing rust and cargo packages......."
