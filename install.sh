@@ -24,7 +24,7 @@ apt upgrade
 apt-get update
 #######################################################################################################################
 echo_alert "Installing everythig to do with package managers......."
-apt install nodejs npm black python3-pip zsh git cargo ripgrep fd-find pass
+apt install nodejs npm black python3-pip zsh git cargo ripgrep fd-find pass unzip
 pip install flake8 pynvim
 ######################################################################################################################
 echo_alert "Installing rust and cargo packages......."
@@ -54,11 +54,10 @@ ln -s "$CONFIG/git/.gitconfig" ~/.gitconfig
 ln -s "$CONFIG/git/.gitignore_global" ~/.gitignore_global
 ln -s "$CONFIG/git/.gitmessage" ~/.gitmessage
 #######################################################################################################################
+EXA_VERSION=$(curl -s "https://api.github.com/repos/ogham/exa/releases/latest" | grep -Po '"tag_name": "v\K[0-9.]+')
+curl -Lo exa.zip "https://github.com/ogham/exa/releases/latest/download/exa-linux-x86_64-v${EXA_VERSION}.zip"
+sudo unzip -q exa.zip bin/exa -d /usr/local
 #######################################################################################################################
 echo_alert "Installing miscellaneous, make these eaiser to install"
-#TODO: make easier to install
-#exa
-wget -c https://old-releases.ubuntu.com/ubuntu/pool/universe/r/rust-exa/exa_0.10.1-1_amd64.deb
-sudo apt-get install ./exa_0.10.1-1_amd64.deb
 
 echo_alert "Install:\nhttps://git-scm.com/download/win\nhttps://docs.microsoft.com/en-us/windows/wsl/tutorials/wsl-database#install-mongodb\n"
