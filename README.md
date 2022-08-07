@@ -1,8 +1,9 @@
 just run `./install.sh` and relax
 
 Also on your windows native machine install:
-https://git-scm.com/download/win (git auth)
-https://docs.microsoft.com/en-us/windows/wsl/tutorials/wsl-database#install-mongodb
+
+* https://git-scm.com/download/win (git auth)
+* https://docs.microsoft.com/en-us/windows/wsl/tutorials/wsl-database#install-mongodb
 
 ### Custom configs:
 * git
