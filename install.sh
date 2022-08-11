@@ -41,7 +41,7 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/mas
 echo_alert "Installing node and everythig using npm........"
 sudo curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash
 nvm install node
-npm install -g @tailwindcss/language-server typescript-language-server typescript live-server create-react-app next react react-dom sass
+npm install -g npm-check-updates @tailwindcss/language-server typescript-language-server typescript live-server create-react-app next react react-dom sass
 #######################################################################################################################
 echo_alert "Install:\nhttps://git-scm.com/download/win\n"
 echo_alert "Installing neovim........"
