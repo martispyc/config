@@ -86,7 +86,7 @@ function gitclone() {
 
 alias ll='ls --color -Gal'
 alias exa='exa --icons -lab'
-alias exatree='exa --icons -lab --tree'
+alias exatree='exa --icons -lb --tree'
 
 case "$(uname -s)" in
 

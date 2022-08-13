@@ -54,8 +54,18 @@ ln -s "$CONFIG/git/.gitconfig" ~/.gitconfig
 ln -s "$CONFIG/git/.gitignore_global" ~/.gitignore_global
 ln -s "$CONFIG/git/.gitmessage" ~/.gitmessage
 #######################################################################################################################
+<<<<<<< HEAD
 EXA_VERSION=$(curl -s "https://api.github.com/repos/ogham/exa/releases/latest" | grep -Po '"tag_name": "v\K[0-9.]+')
 curl -Lo exa.zip "https://github.com/ogham/exa/releases/latest/download/exa-linux-x86_64-v${EXA_VERSION}.zip"
 sudo unzip -q exa.zip bin/exa -d /usr/local
 #######################################################################################################################
 
+=======
+echo_alert "Installing miscellaneous, make these eaiser to install"
+#TODO: make easier to install
+#exa
+wget -c https://old-releases.ubuntu.com/ubuntu/pool/universe/r/rust-exa/exa_0.10.1-1_amd64.deb
+sudo apt-get install ./exa_0.10.1-1_amd64.deb
+#######################################################################################################################
+echo_alert "Install:\nhttps://git-scm.com/download/win\n"
+>>>>>>> 016586a (update)
