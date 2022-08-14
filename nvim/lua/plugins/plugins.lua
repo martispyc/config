@@ -95,6 +95,9 @@ local plugins = {
    {"jose-elias-alvarez/null-ls.nvim", config = "require('plugins.lsp.null-ls')"}, -- for formatters and linters:wq
    {"folke/todo-comments.nvim"},
    {"rcarriga/nvim-notify"},
+   {"goolord/alpha-nvim", config = rcp "alpha"},
+   {"RRethy/vim-illuminate", config = rcp "illuminate"},
+   {"ahmedkhalf/project.nvim", config = rcp "project"},
 
 
    -- Snippets & Language & Syntax
@@ -106,6 +109,11 @@ local plugins = {
    -- Nvim Tree
    {"kyazdani42/nvim-tree.lua", config = rcp "nvim-tree"}, -- file explorer
    -- TODO: {"airblade/vim-rooter"},
+
+   -- DAP
+     {"mfussenegger/nvim-dap", config = rcp "dap"},
+     {"rcarriga/nvim-dap-ui"},
+     {"ravenxrz/DAPInstall.nvim"},
 
    -- GIT
    {"lewis6991/gitsigns.nvim",
