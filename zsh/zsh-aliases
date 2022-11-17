@@ -84,9 +84,9 @@ function gitclone() {
     fi # closing statement of if-else block
 }
 
-alias ll='ls --color -Gal'
-alias exa='exa --icons -lab'
 alias exatree='exa --icons -lb --tree'
+# alias ll='ls --color -Gal'
+alias ll='exa --icons -lab'
 
 case "$(uname -s)" in
 

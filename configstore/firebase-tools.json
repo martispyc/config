@@ -1,0 +1,37 @@
+{
+	"analytics-uuid": "6aeec289-4b43-4d97-949a-d29127b5e720",
+	"motd": {
+		"cloudBuildErrorAfter": 1594252800000,
+		"cloudBuildWarnAfter": 1590019200000,
+		"defaultNode10After": 1594252800000,
+		"minVersion": "3.0.5",
+		"node8DeploysDisabledAfter": 1613390400000,
+		"node8RuntimeDisabledAfter": 1615809600000,
+		"node8WarnAfter": 1600128000000,
+		"fetched": 1667677599566
+	},
+	"usage": true,
+	"user": {
+		"iss": "accounts.google.com",
+		"azp": "563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com",
+		"aud": "563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com",
+		"sub": "109057773477441749327",
+		"email": "burmistrs3@gmail.com",
+		"email_verified": true,
+		"at_hash": "b1I5DPbL4x1FHGixB4BDEQ",
+		"iat": 1667677610,
+		"exp": 1667681210
+	},
+	"tokens": {
+		"expires_at": 1667681210014,
+		"access_token": "ya29.a0AeTM1idhffj1ZHRY4z8ClM5kXXFbmQEi4A-Bk7x_UPOP7eUuOBd2_LYIAMz3BiI-uNR3j5v-Kjg7R8aRiGT-EqxKb8_gBgRFGStiCNPIJ8Wo6DssaGWgP9xgMhaXowbRJXEGX2LsDJVFsDWo490o2bCtKTjb_XVWYpveaCgYKAVQSARISFQHWtWOm59tFJiI-BAjRs7YTJEp3EQ0171",
+		"expires_in": 3599,
+		"refresh_token": "1//0c0gVK1mCbgTOCgYIARAAGAwSNwF-L9Ir-4P0KiZvkkbvY7AmBDS8qtnQKWPB_6AmhxUkCGlvS3xUU6-Fs7BUMK68L3O3ojG6ozc",
+		"scope": "https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/firebase https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/cloud-platform openid",
+		"token_type": "Bearer",
+		"id_token": "eyJhbGciOiJSUzI1NiIsImtpZCI6ImY0NTEzNDVmYWQwODEwMWJmYjM0NWNmNjQyYTJkYTkyNjdiOWViZWIiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJhY2NvdW50cy5nb29nbGUuY29tIiwiYXpwIjoiNTYzNTg0MzM1ODY5LWZncmhnbWQ0N2JxbmVraWo1aThiNXByMDNobzg0OWU2LmFwcHMuZ29vZ2xldXNlcmNvbnRlbnQuY29tIiwiYXVkIjoiNTYzNTg0MzM1ODY5LWZncmhnbWQ0N2JxbmVraWo1aThiNXByMDNobzg0OWU2LmFwcHMuZ29vZ2xldXNlcmNvbnRlbnQuY29tIiwic3ViIjoiMTA5MDU3NzczNDc3NDQxNzQ5MzI3IiwiZW1haWwiOiJidXJtaXN0cnMzQGdtYWlsLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJhdF9oYXNoIjoiYjFJNURQYkw0eDFGSEdpeEI0QkRFUSIsImlhdCI6MTY2NzY3NzYxMCwiZXhwIjoxNjY3NjgxMjEwfQ.TkFtLYU15qvYfCx8zACm6x-URMcdH0a8bYrbecAIckJ20mo27dgXzI-pzDfezv496265bhVFA7HYodF1sYsziZ13jeTEZmAEHsaQm74xhnLJn0U2QnlGtVEP2Vo2qGtWEb5qJSLkMjWKQCoe54PxvXFBSL6tYi6W7StX4v2tJTLdH-F1MZmcfDFM0y8IGVp-hYEEWJ9mlXcDV_9I0l9GyyldNfFsPeN8fFtjDs5yvItnPBSCCeDtLil-kdGrsUfXtzslCHB02yL3wwl4hfi-qBx3bGpNOk05dGvkC-F6eUdWwhYWyPiJzOIacYbKuqny63Rky1KqgyFAFNbR82oRoA"
+	},
+	"activeProjects": {
+		"/home/matiss/code/projects/splitsia": "splitsia"
+	}
+}

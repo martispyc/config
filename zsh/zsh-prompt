@@ -8,10 +8,8 @@ autoload -U colors && colors
 zstyle ':vcs_info:*' enable git 
 
 #ls colors
-export CLICOLOR=1
-export LSCOLORS=ExGxBxDxCxEgEdxbxgxcxd
-alias ll="ls -alG"
-
+#export CLICOLOR=1
+#export LSCOLORS=ExGxBxDxCxEgEdxbxgxcxd
 
 # setup a hook that runs before every ptompt. 
 precmd_vcs_info() { vcs_info }
