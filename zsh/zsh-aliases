@@ -9,7 +9,7 @@ alias cdconfig='cd ~/.config'
 alias cdcode='cd ~/code'
 alias explorer='/mnt/c/windows/explorer.exe .'
 alias code='/mnt/c/Users/Matiss/AppData/Local/Programs/Microsoft\ VS\ Code/bin/code'
-
+alias android-studio='~/code/applications/android-studio/bin/studio.sh'
 # WIN64/86
 alias cddownloads='cd /mnt/c/Users/Matiss/Downloads/'
 alias wincdcode='cd /mnt/c/Users/Matiss/code/'
