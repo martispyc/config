@@ -1,0 +1,33 @@
+<application>
+  <component name="RecentProjectsManager">
+    <option name="additionalInfo">
+      <map>
+        <entry key="$USER_HOME$/AndroidStudioProjects/MyApplication">
+          <value>
+            <RecentProjectMetaInfo frameTitle="My Application" projectWorkspaceId="2HiiUznyJlq8LGKa5tlbj61017z">
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="build" value="AI-213.7172.25.2113.9123335" />
+              <option name="buildTimestamp" value="1664506905733" />
+              <frame x="2852" y="-32" width="1400" height="1000" />
+              <option name="productionCode" value="AI" />
+              <option name="projectOpenTimestamp" value="1668774325954" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/code/projects/beepless">
+          <value>
+            <RecentProjectMetaInfo frameTitle="beepless – main.dart [beepless]" opened="true" projectWorkspaceId="2HiwWhj4LCDlrBCsIKXTw2nScrK">
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="build" value="AI-213.7172.25.2113.9123335" />
+              <option name="buildTimestamp" value="1664506901692" />
+              <frame x="2528" y="-32" width="1400" height="1000" />
+              <option name="productionCode" value="AI" />
+              <option name="projectOpenTimestamp" value="1668775183712" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="lastProjectLocation" value="$USER_HOME$/AndroidStudioProjects" />
+  </component>
+</application>

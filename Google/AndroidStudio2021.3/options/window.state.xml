@@ -2,10 +2,25 @@
   <component name="DimensionService">
     <location key="WELCOME_SCREEN.2560.0.2560.1440" x="3808" y="300" />
   </component>
+  <component name="WindowManager">
+    <frame x="2528" y="-32" width="1400" height="1000" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" weight="0.25" />
+      <window_info anchor="bottom" id="Version Control" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
+    </layout>
+  </component>
   <component name="WindowStateApplicationService">
-    <state x="3808" y="548" width="800" height="600" key="WELCOME_SCREEN" timestamp="1668765882407">
+    <state x="2983" y="94" key="SettingsEditor" timestamp="1668774270355">
       <screen x="2560" y="0" width="2560" height="1440" />
     </state>
-    <state x="3808" y="548" width="800" height="600" key="WELCOME_SCREEN/2560.0.2560.1440/0.0.2560.1440" timestamp="1668765882407" />
+    <state x="2983" y="94" key="SettingsEditor/2560.0.2560.1440/0.0.2560.1440" timestamp="1668774270355" />
+    <state x="3808" y="548" width="800" height="600" key="WELCOME_SCREEN" timestamp="1668774227216">
+      <screen x="2560" y="0" width="2560" height="1440" />
+    </state>
+    <state x="3808" y="548" width="800" height="600" key="WELCOME_SCREEN/2560.0.2560.1440/0.0.2560.1440" timestamp="1668774227216" />
   </component>
 </application>

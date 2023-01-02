@@ -1,15 +1,52 @@
 <application>
+  <component name="DynamicPluginEnabler">
+    <trackers>
+      <map>
+        <entry key="2HiiUznyJlq8LGKa5tlbj61017z">
+          <value>
+            <ProjectPluginTracker />
+          </value>
+        </entry>
+        <entry key="2HijunkF2jmSh6QklfqaofPwYZ7">
+          <value>
+            <ProjectPluginTracker />
+          </value>
+        </entry>
+        <entry key="2HiwWhj4LCDlrBCsIKXTw2nScrK">
+          <value>
+            <ProjectPluginTracker />
+          </value>
+        </entry>
+      </map>
+    </trackers>
+  </component>
   <component name="PropertiesComponent">
     <property name="AndroidInitConfigurator.V1" value="true" />
     <property name="AndroidInitConfigurator.V3" value="true" />
     <property name="AndroidInitConfigurator.V5" value="true" />
     <property name="NonModalCommitCustomization.IsApplied" value="true" />
-    <property name="android.sdk.path" value="$USER_HOME$/Android/Sdk" />
+    <property name="SAVED_ANDROID_NPW_ASKED_LANGUAGE" value="true" />
+    <property name="SAVED_ANDROID_NPW_LANGUAGE" value="Kotlin" />
+    <property name="SAVED_ANDROID_PACKAGE" value="com.example" />
+    <property name="android.sdk.path" value="$USER_HOME$/code/applications/android" />
+    <property name="appcds.runOnSecondStart" value="AI-213.7172.25.2113.9123335-ffac7957d6ac9bb5b1c7e8a1f700004e3830eeccfd492bab50ccc1e50d6a10e0" />
     <property name="ask.about.ctrl.y.shortcut.v2" value="true" />
+    <property name="build.toolwindow.Sync.selection.state" value="com.intellij.build.BuildTreeConsoleView" />
     <property name="bundled.plugins.list.saved.version" value="AI-213.7172.25.2113.9123335" />
-    <property name="fileTypeChangedCounter" value="1" />
+    <property name="file.chooser.recent.files" value="$USER_HOME$/code/applications/android" />
+    <property name="file.gist.reindex.count" value="59" />
+    <property name="fileTypeChangedCounter" value="3" />
     <property name="fileTypeDetectors" value="com.android.tools.idea.profilers.capture.MemoryCaptureFileType$Detector:com.android.tools.idea.sqlite.fileType.SqliteFileTypeDetector:com.intellij.ide.scratch.ScratchFileServiceImpl$Detector:com.jetbrains.cidr.lang.OCHeaderFileTypeDetector:org.jetbrains.plugins.textmate.TextMateFileType$TextMateFileDetector" />
     <property name="input.method.disabler.muted" value="true" />
+    <property name="installed.kotlin.plugin.version" value="213-1.7.20-release-for-android-studio-AS6777.52" />
+    <property name="io.flutter.analytics.clientId" value="66309948-e6c9-4730-8993-846c01bb86c8" />
+    <property name="io.flutter.analytics.toastShown" value="true" />
+    <property name="io.flutter.console.preferencesSet" value="true" />
+    <property name="kotlin-gradle-user-dirs" value="$USER_HOME$/.gradle" />
+    <property name="last_opened_file_path" value="$USER_HOME$/code/applications/android" />
+    <property name="newly.installed.api.level" value="32" />
+    <property name="registry.to.advanced.settings.migration.build" value="AI-213.7172.25.2113.9123335" />
+    <property name="studio.activity.count" value="1" />
     <property name="tasks.pass.word.conversion.enforced" value="true" />
   </component>
 </application>

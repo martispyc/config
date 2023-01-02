@@ -57,7 +57,7 @@ endfunction
 -- Use autocmds(filtype, 'command to run with no flags, aka. "minimal" mode', 'command to run with all the flags, aka. "normal" mode', 'number of rows that the terminal will take in normal mode, 0 for content size', 'the def setting when using leader_r from all the four setting')
 
 
-..make_autocmd("cpp", "g++ -std=c++17 -DONPC -O2 -o %< % && %<", "g++ -fsanitize=address -std=c++17 -Wall -Wextra -Wshadow -DONPC -O2 -o %< % && %<", 4, 2)
+..make_autocmd("cpp", "g++ -std=c++17 -DONPC -O2 -o %< % && %<", "g++ -fsanitize=address -std=c++17 -Wall -Wextra -Wshadow -DONPC -O2 -o %< % && ./%<", 4, 2)
 ..make_autocmd("python", "python3 %", "python3 %", 0, 4)
 ..make_autocmd("rust", "cargo run", "cargo run", 0, 4)
 ..make_autocmd("javascript", "node %", "node %", 0, 4)
